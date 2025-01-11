@@ -1,12 +1,15 @@
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import applogo from "../assets/applogo.png";
+
+
+
 import {
   RiInstagramFill,
   RiTiktokFill,
   RiTwitterXFill,
 } from "react-icons/ri";
-import { useEffect, useState } from "react";
 import { FaFacebookF } from "react-icons/fa";
 
 const Nav = () => {
@@ -27,7 +30,7 @@ const Nav = () => {
   return (
     <nav className="fixed p-1 md:p-5 top-0 left-0 w-full bg-white z-50">
       {/* Desktop View */}
-      <div className="w-full px-6 md:px-[50px] lg:px-[150px] flex justify-between items-center h-[80px]">
+      <div className="w-full px-6 md:px-[50px] lg:px-[150px] flex justify-between items-center h-[83.58px]">
         {/* Brand Logo */}
         <div className="flex items-center py-8">
           <img
@@ -39,23 +42,14 @@ const Nav = () => {
 
         {/* Menu Links for Desktop */}
         <div className="hidden md:flex lg:flex items-center text-brandNavyblue">
-          <div className="flex items-center space-x-[50px] md:space-x-[30px]">
-            <Link
-              to="/"
-              className="text-[16px]  "
-            >
+          <div className="flex items-center space-x-[80px] md:space-x-[30px]">
+            <Link to="/" className="text-[16px]">
               About
             </Link>
-            <Link
-              to="/"
-              className="text-[16px] "
-            >
+            <Link to="/" className="text-[16px]">
               Blog
             </Link>
-            <Link
-              to="/"
-              className="text-[16px] "
-            >
+            <Link to="/" className="text-[16px]">
               Support
             </Link>
           </div>
@@ -129,5 +123,4 @@ const Nav = () => {
     </nav>
   );
 };
-
 export default Nav;
