@@ -28,9 +28,9 @@ const Nav = () => {
   }, [nav]);
 
   return (
-    <nav className="fixed p-1 md:p-5 top-0 left-0 w-full bg-white z-50">
+    <nav className="fixed overflow-x-hidden  p-1 md:py-5 md:px-6 top-0 left-0 w-full bg-white z-50">
       {/* Desktop View */}
-      <div className="w-full px-6 md:px-[50px] lg:px-[150px] flex justify-between items-center h-[83.58px]">
+      <div className="w-full px-6 md:px-[50px] lg:px-[150px] flex justify-between items-center h-[83.58px] md:h-[40px]">
         {/* Brand Logo */}
         <div className="flex items-center py-8">
           <img
@@ -40,9 +40,9 @@ const Nav = () => {
           />
         </div>
 
-        {/* Menu Links for Desktop */}
+        {/* Menu Links for Desktop and tablet */}
         <div className="hidden md:flex lg:flex items-center text-brandNavyblue">
-          <div className="flex items-center space-x-[80px] md:space-x-[30px]">
+          <div className="flex items-center md:space-x-[30px] lg:space-x-[55px]">
             <Link to="/" className="text-[16px]">
               About
             </Link>
@@ -57,7 +57,7 @@ const Nav = () => {
 
         {/* Button for Desktop and Tablet */}
         <div className="hidden md:flex">
-          <button className="relative -top-1 -left-1 rounded-xl border-[1px] leading-[19.84px] w-[154px] h-[45px] text-[13.5px] bg-brandPrimary py-2.5 px-6 text-white transition-all before:absolute before:top-2 before:border-brandPrimary before:border-[2px] before:left-2 before:-z-[1] before:rounded-xl before:h-full before:w-full before:bg-brandSecondary before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
+          <button className="relative -top-1 -left-1 rounded-xl border-[1px] md:leading-[14.84px] lg:leading-[19.84px] md:w-[135px] md:h-[35px] lg:w-[154px] lg:h-[45px] md:text-[10px] lg:text-[13.5px] bg-brandPrimary md:py-1 md:px-4  lg:py-2.5 lg:px-6 text-white transition-all before:absolute lg:before:top-2 md:before:top-1 before:border-brandPrimary before:border-[2px] before:left-2 before:-z-[1] before:rounded-xl before:h-full before:w-full before:bg-brandSecondary before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
             Make a payment
           </button>
         </div>
