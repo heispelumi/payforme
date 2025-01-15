@@ -9,6 +9,6 @@
 
 body {
   font-family: "Cabinet Grotesk", sans-serif;
-  overflow-x: hidden;
-  font-style: normal; 
+  box-sizing: border-box;
+ 
 }
