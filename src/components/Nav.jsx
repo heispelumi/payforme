@@ -28,9 +28,9 @@ const Nav = () => {
   }, [nav]);
 
   return (
-    <nav className="fixed overflow-x-hidden  p-1 md:py-5 md:px-6 top-0 left-0 w-full bg-white z-50">
+    <nav className="fixed overflow-x-hidden  p-1 md:py-5 md:px-6 top-0 left-0 w-full bg-gray-100  z-50">
       {/* Desktop View */}
-      <div className="w-full px-6 md:px-[50px] lg:px-[150px] flex justify-between items-center h-[83.58px] md:h-[40px]">
+      <div className="w-full fixed  px-6 md:px-[50px] bg-gray-100  lg:px-[150px] flex justify-between items-center h-[83.58px] md:h-[80px]">
         {/* Brand Logo */}
         <div className="flex items-center py-8">
           <img
@@ -41,15 +41,15 @@ const Nav = () => {
         </div>
 
         {/* Menu Links for Desktop and tablet */}
-        <div className="hidden md:flex lg:flex items-center text-brandNavyblue">
-          <div className="flex items-center md:space-x-[30px] lg:space-x-[55px]">
-            <Link to="/" className="text-[16px]">
+        <div className="hidden md:flex lg:flex items-center  text-brandNavyblue">
+          <div className="flex items-center ml-[-100px] md:space-x-[45px] lg:space-x-[30px]">
+            <Link to="/about" className="text-[16px]">
               About
             </Link>
-            <Link to="/" className="text-[16px]">
+            <Link to="/blog" className="text-[16px]">
               Blog
             </Link>
-            <Link to="/" className="text-[16px]">
+            <Link to="/support" className="text-[16px]">
               Support
             </Link>
           </div>
@@ -94,13 +94,13 @@ const Nav = () => {
 
         {/* Menu Links */}
         <div className="flex flex-col items-center pt-[130px] space-y-8">
-          <Link to="/" onClick={() => setNav(false)} className="text-[16px]">
+          <Link to="/about" onClick={() => setNav(false)} className="text-[16px]">
             About
           </Link>
-          <Link to="/" onClick={() => setNav(false)} className="text-[16px]">
+          <Link to="/blog" onClick={() => setNav(false)} className="text-[16px]">
             Blog
           </Link>
-          <Link to="/" onClick={() => setNav(false)} className="text-[16px]">
+          <Link to="/support" onClick={() => setNav(false)} className="text-[16px]">
             Support
           </Link>
         </div>
