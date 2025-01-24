@@ -28,9 +28,9 @@ const Nav = () => {
   }, [nav]);
 
   return (
-    <nav className="fixed overflow-x-hidden  p-1 md:py-5 md:px-6 top-0 left-0 w-full bg-gray-100  z-50">
+    <nav className="fixed  overflow-x-hidden items-center  justify-center   md:py-6 w-full bg-gray-100  z-20">
       {/* Desktop View */}
-      <div className="w-full fixed  px-6 md:px-[50px] bg-gray-100  lg:px-[150px] flex justify-between items-center h-[83.58px] md:h-[80px]">
+      <div className="w-full fixed  px-6 md:px-[50px] md:pb-[20px] bg-gray-100  lg:px-[150px] flex justify-between items-center h-[83.58px] md:h-[80px]">
         {/* Brand Logo */}
         <div className="flex items-center py-8">
           <img
@@ -41,8 +41,11 @@ const Nav = () => {
         </div>
 
         {/* Menu Links for Desktop and tablet */}
-        <div className="hidden md:flex lg:flex items-center  text-brandNavyblue">
-          <div className="flex items-center ml-[-100px] md:space-x-[45px] lg:space-x-[30px]">
+        <div className="hidden  md:flex lg:flex items-center  text-brandNavyblue">
+          <div className="flex items-center lg:ml-[-85px] md:space-x-[25px] lg:space-x-[30px]">
+          <Link to="/hero" className="text-[16px]">
+              Home
+            </Link>
             <Link to="/about" className="text-[16px]">
               About
             </Link>
@@ -83,8 +86,8 @@ const Nav = () => {
       <div
         className={`${
           nav
-            ? "fixed top-0 left-0 w-full h-[450px] bg-white flex flex-col items-center z-30 transform translate-y-0 transition-transform duration-300 ease-out"
-            : "fixed top-0 left-0 w-full h-[450px] bg-white flex flex-col items-center z-30 transform -translate-y-full transition-transform duration-300 ease-in"
+            ? "fixed top-0 left-0 w-full h-[490px] bg-white flex flex-col items-center z-30 transform translate-y-0 transition-transform duration-300 ease-out"
+            : "fixed top-0 left-0 w-full h-[490px] bg-white flex flex-col items-center z-30 transform -translate-y-full transition-transform duration-300 ease-in"
         }`}
       >
         <AiOutlineClose
@@ -94,6 +97,9 @@ const Nav = () => {
 
         {/* Menu Links */}
         <div className="flex flex-col items-center pt-[130px] space-y-8">
+        <Link to="/hero" className="text-[16px]">
+              Home
+            </Link>
           <Link to="/about" onClick={() => setNav(false)} className="text-[16px]">
             About
           </Link>
@@ -113,7 +119,7 @@ const Nav = () => {
         </div>
 
         {/* Social Icons */}
-        <div className="flex items-center justify-center space-x-4 mt-[20px] lg:hidden">
+        <div className="flex items-center justify-center space-x-4 mt-[20px] md:hidden">
           <RiTwitterXFill className="w-[15px] h-[15px]" />
           <RiTiktokFill className="w-[15px] h-[15px]" />
           <RiInstagramFill className="w-[15px] h-[15px]" />

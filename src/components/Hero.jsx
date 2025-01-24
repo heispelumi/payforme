@@ -7,7 +7,7 @@ import hero from "../assets/hero.png";
 
 const Hero = () => {
   return (
-    <div className="flex  items-center relative   h-full justify-center ">
+    <div className="flex  items-center relative  h-full justify-center ">
       {/* Top Hero button */}
       <div className="flex items-center justify-center w-[178px] ml-[-10px] h-[32px] md:w-[430px]  md:h-[48px]  ">
         <div className="flex w-full items-center md:mx-[-24px] lg:mx-4 border-brandPrimary rounded-xl border-dotted border-[2px] pt-[8px] pr-[12px] pb-[8px] md:pt-[16px] pl-[20px] gap-[14px] md:pr-[20px] md:pb-[16px] md:pl-[20px] md:gap-[14px] bg-[#AFE27429]">
@@ -32,22 +32,22 @@ const Hero = () => {
    
 
           {/* Image1 */}
-          <div className="absolute w-[45px] h-[30px] md:w-[80px] md:h-[100px] top-[185.38px] md:top-[260.38px] lg:top-[264.38px] right-[245px] md:right-[470px]  lg:right-[700px] transform rotate-37.21">
+          <div className="absolute w-[45px] h-[30px] md:w-[80px] md:h-[100px] top-[185.38px] md:top-[260.38px] lg:top-[264.38px] right-[245px] md:right-[470px]  lg:right-[600px] transform rotate-37.21">
             <img src={creditcard} alt="" />
           </div>
 
           {/* Image2 */}
-          <div className="absolute w-[45px] h-[30px] md:w-[80px]  lg:w-[126px] md:h-[90.46px] top-[330.38px] md:top-[430.38px] lg:top-[500.38px] right-[200px] md:right-[410px] lg:right-[500px] transform rotate-37.21">
+          <div className="absolute w-[45px] h-[30px] md:w-[80px]  lg:w-[126px] md:h-[90.46px] top-[330.38px] md:top-[430.38px] lg:top-[500.38px] right-[200px] md:right-[410px] lg:right-[480px] transform rotate-37.21">
             <img src={Graduation} alt="" />
           </div>
 
           {/* Image3 */}
-          <div className="absolute w-[45px] h-[45px] lg:w-[80px] md:h-[100px] top-[182.38px]  left-[15px] md:left-[66px] lg:left-[240px] lg:top-[260.38px]  md:top-[260.38px]  transform rotate-37.21">
+          <div className="absolute w-[45px] h-[45px] lg:w-[80px] md:h-[100px] top-[182.38px]  left-[15px] md:left-[66px] lg:left-[200px] lg:top-[260.38px]  md:top-[260.38px]  transform rotate-37.21">
             <img src={profits} alt="" />
           </div>
 
           {/* Image4 */}
-          <div className="absolute w-[30px] h-[30px] md:h-[90px] left-[-30px] top-[340.32px] sm:w-[60px] sm:h-[110px] md:w-[50px] md:left-[10px] lg:left-[120px] lg:top-[520px] md:top-[440px] lg:w-[80px] lg:h-[150px] transform rotate-37.21">
+          <div className="absolute w-[30px] h-[30px] md:h-[90px] left-[-30px] top-[340.32px] sm:w-[60px] sm:h-[110px] md:w-[50px] md:left-[10px] lg:left-[90px] lg:top-[520px] md:top-[440px] lg:w-[80px] lg:h-[150px] transform rotate-37.21">
             <img src={Vector2} alt="Decorative Element" />
           </div>
 
