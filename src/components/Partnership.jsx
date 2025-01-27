@@ -40,7 +40,7 @@ const Partnership = () => {
         </div>
 
         {/* link */}
-        <div className=" text-[12px] md:text-[16px] lg:text-[22px]">
+        <div className="  pt-4 text-[12px] md:text-[16px] lg:text-[22px]">
           <a
             href="#"
             className="text-brandPrimary underline "

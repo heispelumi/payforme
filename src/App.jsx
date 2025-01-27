@@ -15,7 +15,7 @@ function App() {
       <div className="relative z-0  mt-[340px] md:mt-[500px]  lg:mt-[900px]">
         <Partnership />
       </div>
-      <div className="relative z-0  mt-[50px] md:mt-[70px]  lg:mt-[10px]">
+      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
         <Users />
       </div>
     </div>
