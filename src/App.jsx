@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Partnership from "./components/Partnership";
 import Users from "./components/Users";
+import About from "./components/About";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
       </div>
       <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
         <Users />
+      </div>
+      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+        <About />
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ const Hero = () => {
                 Cross-border{" "}
                 <span className="relative">
                   Payment
-                  <span className="absolute bottom-0 left-0 w-[60px] h-[3.52px] md:w-[150px] lg:w-[200px] lg:h-[10px] bg-brandSecondary block mx-auto"></span>
+                  <span className="absolute bottom-0 left-0 w-[74px] h-[3.52px]  md:w-[120px] lg:w-[200px]  md:h-[10px] bg-brandSecondary block mx-auto"></span>
                 </span>{" "}
                 for
               </h1>

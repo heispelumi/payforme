@@ -12,13 +12,13 @@ import { FaStar } from "react-icons/fa";
 
 const Users = () => {
   return (
-    <div className="flex flex-col items-center  w-full py-[30px] md:py-[50px py-[30px] justify-center h-full bg-white">
+    <div className="flex flex-col items-center  w-full md:py-[60px] md:py-[50px py-[30px] justify-center h-full bg-white">
       <div className=" py-6 lg:w-[701px] lg:h-[120px] flex   lg:flex-row items-center  justify-center gap-y-[60px] text-center">
         {/* World Icon */}
         <img
           src={World}
           alt="World"
-          className="mb-5 md:mb-10 w-[25.4px] h-[25.4px] object-cover "
+          className="mb-5 md:mb-10  mr-4  w-[25.4px] h-[25.4px] object-cover "
         />
 
         {/* Text */}
@@ -30,13 +30,13 @@ const Users = () => {
         <img
           src={Speed}
           alt="Speed"
-          className=" mt-5 md:mt-10  w-[25.4px] h-[25.4px] object-cover "
+          className=" mt-5 md:mt-10  mr-4 w-[25.4px] h-[25.4px] object-cover "
         />
       </div>
 
       {/* Images */}
-      <div className="flex flex-col   justify-center lg:w-[1189px] lg:h-[694px] lg:pt-[70px] items-center ">
-        <div className="flex flex-col  pb-[70px]  md:pb-[30px]  lg:pb-[60px] my-6 lg:flex-row justify-between items-center   lg:w-[1189px] lg:h-[694px]">
+      <div className="flex flex-col   justify-center lg:w-[1189px] md:py-[40px] lg:h-[694px] lg:pt-[70px] items-center ">
+        <div className="flex flex-col  pb-[70px]  md:pb-[30px]  lg:pb-[0px] my-6 lg:flex-row justify-between items-center   lg:w-[1189px] lg:h-[694px]">
           {/* Image1 */}
            <div className=" flex flex-col lg:flex-row justify-center lg:justify-between  w-full  gap-y-[90px]  md:gap-y-[50px]"  >
           {/* Outer border */}
@@ -69,53 +69,59 @@ const Users = () => {
           </div>
 
           {/* Middle gradient */}
-          <div className="lg:flex hidden flex-col items-center justify-center space-y-4">
-            {/* First Button */}
-            <div className="w-[300px] p-4 h-[60px] shadow-[0px_0px_400px_60px_rgba(0,160,0,0.8)] bg-white border-gray-400 border-2 rounded-lg flex items-center justify-between">
-              {/* Playstore Section */}
-              <div className="flex items-center">
-                <img
-                  src={playstore}
-                  alt="Playstore"
-                  className="w-[30px] h-[30px] mr-2 object-contain"
-                />
-                <span className="text-gray-700 text-[20px] pr-2 font-thin">
-                  Playstore
-                </span>
-              </div>
+          <div className="lg:flex hidden flex-col items-center justify-center space-y-4 relative">
+  {/* First Button */}
+  <div className="w-[300px] p-4 h-[60px] bg-white border-gray-400 border-2 rounded-lg flex items-center justify-between relative z-10">
+    {/* Playstore Section */}
+    <div className="flex items-center">
+      <img
+        src={playstore}
+        alt="Playstore"
+        className="w-[30px] h-[30px] mr-2 object-contain"
+      />
+      <span className="text-gray-700 text-[20px] pr-2 font-thin">
+        Playstore
+      </span>
+    </div>
 
-              {/* Divider */}
-              <div className="w-[2px] h-full bg-gray-300"></div>
+    {/* Divider */}
+    <div className="w-[2px] h-full bg-gray-300"></div>
 
-              {/* Another Text Section */}
-              <span className="text-gray-700 font-thin text-[20px] pl-2">
-                More Reviews
-              </span>
-            </div>
+    {/* Another Text Section */}
+    <span className="text-gray-700 font-thin text-[20px] pl-2">
+      More Reviews
+    </span>
+  </div>
 
-            {/* Second Button */}
-            <div className="w-[300px] p-4 h-[60px]  bg-white border-gray-400 border-2 rounded-lg flex items-center ">
-              {/* Asset Section */}
-              <div className="flex items-center">
-                <img
-                  src={apple}
-                  alt="Another Asset"
-                  className="w-[30px] h-[30px] mr-2 object-contain"
-                />
-                <span className="text-gray-700 text-[20px] pr-2 font-thin">
-                  Appstore
-                </span>
-              </div>
+   
+  <div className="absolute  top-[60%] left-0 right-0 shadow-[0px_0px_400px_60px_rgba(122,197,45,0.5),_0px_0px_400px_60px_rgba(236,135,78,0.5),_0px_0px_400px_60px_rgba(173,221,28,0.5)]  z-0"></div>
 
-              {/* Divider */}
-              <div className="w-[2px] h-full bg-gray-300"></div>
+  {/* Second Button */}
+  <div className="w-[300px] p-4 h-[60px] bg-white border-gray-400 border-2 rounded-lg flex items-center relative z-10">
+    {/* Asset Section */}
+    <div className="flex items-center">
+      <img
+        src={apple}
+        alt="Another Asset"
+        className="w-[30px] h-[30px] mr-2 object-contain"
+      />
+      <span className="text-gray-700 text-[20px] pr-2 font-thin">
+        Appstore
+      </span>
+    </div>
 
-              {/* Another Text Section */}
-              <span className="text-gray-700 font-thin text-[20px] pl-2 ">
-                More Review
-              </span>
-            </div>
-          </div>
+    {/* Divider */}
+    <div className="w-[2px] h-full bg-gray-300"></div>
+
+    {/* Another Text Section */}
+    <span className="text-gray-700 font-thin text-[20px] pl-2">
+      More Review
+    </span>
+  </div>
+
+
+</div>
+
 
           {/* Image2 */}
   
@@ -215,7 +221,7 @@ const Users = () => {
 
         <div className="lg:hidden flex flex-col items-center justify-center pt-[100px] md:pt-[60px] space-y-3">
           {/* First Button */}
-          <div className="w-[300px] p-4 h-[60px] shadow-[0px_0px_400px_60px_rgba(0,160,0,0.8)] bg-white border-gray-400 border-2 rounded-lg flex items-center justify-between">
+          <div className="w-[300px] p-4 h-[60px] shadow-[0px_0px_400px_60px_rgba(122,197,45,0.5),_0px_0px_400px_60px_rgba(236,135,78,0.5),_0px_0px_400px_60px_rgba(173,221,28,0.5)] bg-white border-gray-400 border-2 rounded-lg flex items-center justify-between">
             {/* Playstore Section */}
             <div className="flex items-center">
               <img
