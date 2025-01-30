@@ -11,7 +11,7 @@ import Frame from '../assets/about/Frame.png';
 
 const About = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center justify-center ">
+    <div className="w-full h-full flex flex-col  mx-auto pr-[60px] items-center justify-center ">
       {/* Title Section */}
       <div className="text-center pt-[60px]">
         <h1 className="text-2xl lg:text-4xl font-bold">
@@ -20,17 +20,17 @@ const About = () => {
       </div>
 
       {/* Card Section */}
-      <div className=" flex flex-col lg:flex-row  space-x-4  items-center justify-center h-full py-[70px] ">
+      <div className=" flex flex-col lg:flex-row  space-x-2 lg:space-x-4  items-center justify-center h-full py-[70px] ">
 
 
-        <div className='flex lg:flex-row space-x-4 '>
-        <div className="relative   lg:w-[370px] lg:h-[670px] bg-[rgba(236,232,82,0.1)] border-[rgba(0,0,0,0.2)] border rounded-[40px] flex flex-col items-center">
+        <div className='flex lg:flex-row  space-x-2 lg:space-x-4 '>
+        <div className="relative  w-[180px] lg:w-[370px] h-[300px] lg:h-[670px] bg-[rgba(236,232,82,0.1)] border-[rgba(0,0,0,0.2)] border lg:rounded-[30px]  rounded-[20px] flex flex-col ">
           {/* Card Content */}
-          <div className="pt-6 ">
-            <p className=" mt-6 text-[20px] leading-[29px] font-semibold w-[300px]">
+          <div className="px-6 text-start lg:pt-2 pt-6 ">
+            <p className="  lg:mt-6 text-[8px] leading-[11px]  w-[120px] lg:text-[15px] lg:leading-[23px] font-semibold    lg:w-[280px]">
               To Facilitate Global Education Payment
             </p>
-            <p className="text-[12px] pt-[20px] w-[300px] font-thin text-gray-700">
+            <p className="text-[5px] lg:text-[10px]   lg:pt-[25px] pt-[10px]  w-[114px] lg:w-[320px] font-thin text-gray-700">
               Pay4Me empowers international students to easily fund their
               educational pursuits by offering a diverse range of payment
               options, including visa fees, tuition, and other essential
@@ -39,11 +39,11 @@ const About = () => {
           </div>
 
           {/* Image Section */}
-          <div className="pb-10">
+          <div className="p-2">
             <img
               src={phone}
               alt="Phone"
-              className="lg:w-[350px] lg:h-[500px] object-contain"
+              className="lg:w-[350px] w-[320px] h-[194px] lg:h-[587px] object-contain"
             />
           </div>
         </div>
@@ -53,15 +53,15 @@ const About = () => {
 
 
         {/* Second and Third Cards Container */}
-        <div className="flex flex-col  lg:w-[325px]   space-y-2 ">
+        <div className="flex flex-col  lg:w-[290px]   space-y-2 ">
           {/* Second Card */}
-          <div className="relative  px-4 flex-grow bg-[rgba(245,108,44,0.1)] h-[300px] border-[rgba(0,0,0,0.2)] border w-[310px] rounded-[40px] flex flex-col items-center">
+          <div className="relative  px-4 flex-grow bg-[rgba(245,108,44,0.1)] lg:h-[300px] h-[130px] border-[rgba(0,0,0,0.2)] border w-[150px] lg:w-[290px] rounded-[30px] flex flex-col ">
             {/* Card Content */}
-            <div className="mt-6 pt-8">
-              <p className="text-[20px] leading-[29px]  font-semibold w-[280px]">
+            <div className=" text-start lg:pt-2 pt-6 ">
+              <p className="lg:mt-6 text-[8px] leading-[11px]  w-[120px] lg:text-[15px] lg:leading-[23px] font-semibold    lg:w-[280px]">
                 To Foster Financial Inclusion
               </p>
-              <p className="text-[11px] pt-[20px] w-[260px] font-thin text-gray-700">
+              <p className="text-[5px] lg:text-[10px]   lg:pt-[25px] pt-[10px]  w-[114px]  lg:w-[260px] font-thin text-gray-700">
                 Pay4Me empowers international students to easily fund their
                 educational pursuits by offering a diverse range of payment
                 options, including visa fees, tuition, and other essential
@@ -74,80 +74,82 @@ const About = () => {
               <img
                 src={transfer}
                 alt="Transfer"
-                className="lg:w-[205px] lg:h-[200px] object-contain"
+                className="lg:w-[405px] w-[300px] h-[80px] lg:h-[200px] object-contain"
               />
             </div>
           </div>
 
           {/* Third Card */}
-          <div className="relative  h-[200px] w-[310px] py-8 px-6 flex-grow bg-[rgba(227,240,175,0.1)] border-[rgba(0,0,0,0.2)] border rounded-[40px] flex flex-col items-center">
+          <div className="relative  lg:h-[200px] w-[150px] h-[80px] lg:w-[290px] px-3 py-6 lg:py-6 lg:px-6 flex-grow bg-[rgba(227,240,175,0.1)] border-[rgba(0,0,0,0.2)] border rounded-[30px] flex flex-col ">
             {/* Card Content */}
-            <div className='pb-10'>
+            <div>
+              
+            </div>
             <div className="">
-              <p className="text-[16px] leading-[24px] font-semibold w-[200px]">
+              <p className="lg:mt-2 text-[8px] leading-[11px]  w-[120px] lg:text-[15px] lg:leading-[23px] font-semibold    lg:w-[180px]">
                 Breaking Geographical Boundaries
               </p>
-              <p className=" text-[11px] pt-[10px] font-thin text-gray-700">
+              <p className=" text-[5px] lg:text-[10px] lg:pt-[10px] pt-2 font-thin lg:w-[240px] text-gray-700">
                 Pay4Me app connects students and institutions across borders,
                 enabling seamless payment flows regardless of location.
               </p>
             </div>
 
-            </div>
+        
 
             {/* Icons */}
-            <div className='absolute left-0 bottom-8'>
-            <div className="absolute bottom-12  left-[70px] flex ">
+            <div className='absolute left-[-65px] bottom-0 lg:left-[-0px] lg:bottom-5'>
+            <div className="absolute bottom-6 left-[90px] lg:bottom-16 lg:left-[50px] flex ">
 
-                <div className='w-[28px] rounded-full border-[2px] border-brandSecondary'>
+                <div className='lg:w-[33px] w-[16px]  rounded-full  border lg:border-[2px] border-brandSecondary'>
               <img
                 src={canada}
                 alt="Canada"
-                className="w-[28px] h-[24px] rounded-full "
+                className="lg:w-[33px]  lg:h-[33px]  rounded-full object-cover "
               />
                 </div>
            
             </div>
-            <div className="absolute bottom-9 left-[135px] flex ">
+            <div className="absolute bottom-4 left-[130px] lg:bottom-12  lg:left-[130px] flex ">
 
-                <div className='w-[33px] rounded-full border-[4px] border-brandSecondary'>
+                <div className='lg:w-[33px] w-[20px]  rounded-full  border lg:border-[2px] border-brandSecondary'>
               <img
                 src={us}
                 alt="Canada"
-                className="w-[33px] h-[25px] rounded-full "
+                className="lg:w-[33px]  lg:h-[33px]  rounded-full object-cover "
               />
                 </div>
            
             </div>
-            <div className="absolute bottom-[52px] left-[200px] flex ">
+            <div className="absolute bottom-6 left-[165px] lg:bottom-16 lg:left-[200px]  flex ">
 
-                <div className='w-[28px] rounded-full border-[2px] border-brandSecondary'>
+                <div className='lg:w-[30px] w-[15px]  rounded-full  border lg:border-[2px] border-brandSecondary'>
               <img
                 src={uk}
                 alt="Canada"
-                className="w-[28px] h-[24px] rounded-full "
+                className="lg:w-[30px]  lg:h-[30px]  rounded-full object-cover "
               />
                 </div>
            
             </div>
-            <div className="absolute bottom-[20px] left-[180px] flex ">
+            <div className="absolute bottom-2 left-[160px] lg:left-[180px]  flex ">
 
-                <div className='w-[22px] rounded-full border-[2px] border-brandSecondary'>
+                <div className='lg:w-[24px] w-[12px]  rounded-full  border lg:border-[2px] border-brandSecondary'>
               <img
                 src={Korea}
                 alt="Canada"
-                className="w-[22px] h-[18px] rounded-full "
+                className="lg:w-[24px]  lg:h-[24px]  rounded-full object-cover "
               />
                 </div>
            
             </div>
-            <div className="absolute bottom-4 left-[90px] flex ">
+            <div className="absolute bottom-1.5  lg:bottom-4  lg:left-[70px] left-[106px] flex ">
 
-                <div className='w-[24px] rounded-full border-[2px] border-brandSecondary'>
+                <div className='lg:w-[29px] w-[13px]  rounded-full  border lg:border-[2px] border-brandSecondary'>
               <img
                 src={Sweden}
                 alt="Canada"
-                className="w-[24px] h-[18px] rounded-full "
+                className="lg:w-[29px]  lg:h-[29px]  rounded-full object-cover "
               />
                 </div>
            
@@ -158,16 +160,16 @@ const About = () => {
 
         </div>
 
-        <div className="flex flex-row lg:flex-col  lg:w-[310px] lg:h-[700px]">
+        <div className="flex flex-row lg:flex-col space-y-2  lg:h-[670px] lg:w-[290px]  ">
           {/* Forth Card */}
-          <div className="relative flex-grow h-[250px] w-[315px] bg-[rgba(41,218,107,0.1)] border-[rgba(0,0,0,0.2)] border rounded-[40px] flex flex-col items-center">
+          <div className="relative flex-grow lg:h-[152px]  w-[100px] lg:w-[290px] bg-[rgba(41,218,107,0.1)] border-[rgba(0,0,0,0.2)] border rounded-[30px] flex flex-col ">
             {/* Card Content */}
-            <div className="py-8 px-8">
-              <p className="text-[16px] leading-[29px] font-semibold w-[260px]">
+            <div className="px-6  text-start lg:pt-2 pt-6 ">
+              <p className="lg:mt-6 text-[8px] leading-[11px]  w-[120px] lg:text-[15px] lg:leading-[23px] font-semibold    lg:w-[280px]">
               To Improve Convenience
                 and Accessibility
               </p>
-              <p className="text-[12px] pt-[20px] w-[280px] font-thin text-gray-700">
+              <p className=" text-[5px] lg:text-[10px]   lg:pt-[10px] pt-[4px] w-[260px] font-thin text-gray-700">
               Pay4Me App provides access to payment services anytime, anywhere, making it convenient for users across different time zones
               </p>
             </div>
@@ -183,14 +185,14 @@ const About = () => {
           </div>
 
           {/* fifth Card */}
-          <div className="relative py-8 px-8 flex-grow bg-[rgba(249,248,2,0.1)] border-[rgba(0,0,0,0.2)] border rounded-[40px] flex flex-col items-center">
+          <div className="relative flex-grow lg:h-[190px] w-[100px] lg:w-[290px] bg-[rgba(249,248,2,0.1)] border-[rgba(0,0,0,0.2)] border rounded-[40px] flex flex-col ">
             {/* Card Content */}
-            <div className='pb-10'>
-            <div className="">
-              <p className="text-[16px] leading-[24px] font-semibold w-[200px]">
+         
+            <div className=" px-6 text-start lg:pt-4   ">
+              <p className="lg:mt-6 text-[8px] leading-[11px]  w-[120px] lg:text-[15px] lg:leading-[23px] font-semibold    lg:w-[250px]">
                 Breaking Geographical Boundaries
               </p>
-              <p className="text-[11px] w-[280px] pt-[6px] font-thin text-gray-700">
+              <p className="text-[5px] lg:text-[10px]   lg:pt-[10px] pt-[4px] w-[260px] font-thin text-gray-700">
               Pay4Me app prioritizes user security by integrating with industry-leading payment gateways like Stripe and PayPal. These gateways employ robust security measures, including encryption, tokenization, and sophisticated fraud detection systems,
               </p>
             </div>
@@ -199,11 +201,11 @@ const About = () => {
               <img
                 src={Frame}
                 alt="Transfer"
-                className="w-[200px] h-[2 00px] object-contain"
+                className="w-[50px] h-[50px] lg:w-[200px] lg:h-[200px] object-contain"
               />
             </div>
 
-            </div>
+      
 
         
           </div>
