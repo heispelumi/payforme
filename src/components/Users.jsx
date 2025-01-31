@@ -18,11 +18,11 @@ const Users = () => {
         <img
           src={World}
           alt="World"
-          className="mb-5 md:mb-10  mr-4  w-[25.4px] h-[25.4px] object-cover "
+          className="mb-5 md:mb-10  mr-2 w-[25.4px] h-[25.4px] object-cover "
         />
 
         {/* Text */}
-        <p className=" text-[15px] md:text-[30px] left-[53px] leading-[20px] md:leading-[40.52px] font-semibold">
+        <p className=" text-[15px] md:text-[30px] left-[53px] leading-[22px] md:leading-[35.52px] font-semibold">
           Trusted by thousands of students
           <span className="block">and immigrants around the world</span>
         </p>
@@ -30,7 +30,7 @@ const Users = () => {
         <img
           src={Speed}
           alt="Speed"
-          className=" mt-5 md:mt-10  mr-4 w-[25.4px] h-[25.4px] object-cover "
+          className=" mt-5 md:mt-10  ml-2 w-[25.4px] h-[25.4px] object-cover "
         />
       </div>
 
@@ -94,7 +94,7 @@ const Users = () => {
   </div>
 
    
-  <div className="absolute  top-[60%] left-0 right-0 shadow-[0px_0px_400px_60px_rgba(122,197,45,0.5),_0px_0px_400px_60px_rgba(236,135,78,0.5),_0px_0px_400px_60px_rgba(173,221,28,0.5)]  z-0"></div>
+  <div className="absolute  top-[60%] left-0 right-0 shadow-[0px_0px_400px_60px_rgba(122,197,45,0.5),_0px_0px_400px_60px_rgba(236,135,78,0.5)]  z-0"></div>
 
   {/* Second Button */}
   <div className="w-[300px] p-4 h-[60px] bg-white border-gray-400 border-2 rounded-lg flex items-center relative z-10">
@@ -220,8 +220,9 @@ const Users = () => {
         </div>
 
         <div className="lg:hidden flex flex-col items-center justify-center pt-[100px] md:pt-[60px] space-y-3">
+  
           {/* First Button */}
-          <div className="w-[300px] p-4 h-[60px] shadow-[0px_0px_400px_60px_rgba(122,197,45,0.5),_0px_0px_400px_60px_rgba(236,135,78,0.5),_0px_0px_400px_60px_rgba(173,221,28,0.5)] bg-white border-gray-400 border-2 rounded-lg flex items-center justify-between">
+          <div className="w-[300px] p-4 h-[60px] shadow-[0px_0px_100px_20px_rgba(122,197,45,0.5),_0px_0px_100px_20px_rgba(236,135,78,0.5)] bg-white border-gray-400 border-2 rounded-lg flex items-center justify-between">
             {/* Playstore Section */}
             <div className="flex items-center">
               <img
@@ -242,7 +243,7 @@ const Users = () => {
               More Reviews
             </span>
           </div>
-
+          
           {/* Second Button */}
           <div className="w-[300px] p-4 h-[60px]  bg-white border-gray-400 border-2 rounded-lg flex items-center ">
             {/* Asset Section */}
