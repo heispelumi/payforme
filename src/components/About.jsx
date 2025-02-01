@@ -11,11 +11,11 @@ import Frame from "../assets/about/Frame.png";
 
 const About = () => {
   return (
-    <div className="w-full h-full flex flex-col  mx-auto lg:pr-[100px] items-center justify-center ">
+    <div className="w-full h-full flex flex-col  mx-auto lg:py-[150px] items-center justify-center ">
       {/* Title Section */}
-      <div className="text-center pt-[60px]">
-        <h1 className="text-2xl lg:text-4xl font-bold">
-          Why We Built the Pay4me App
+      <div className="text-center  ">
+        <h1 className="text-[15px] lg:text-[45px] font-bold">
+        Why We Built the Pay4me App
         </h1>
       </div>
 
