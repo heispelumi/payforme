@@ -12,8 +12,8 @@ import { FaStar } from "react-icons/fa";
 
 const Users = () => {
   return (
-    <div className="flex flex-col items-center  w-full md:py-[100px]  py-[30px] justify-center h-full bg-white">
-      <div className=" py-[60px] lg:w-[701px] lg:h-[120px] flex   lg:flex-row items-center  justify-center gap-y-[60px] text-center">
+    <div className="flex flex-col items-center  w-full md:py-[100px]  py-[30px] justify-center  h-[957px]  bg-white mx-auto  ">
+      <div className=" lg:w-[701px] lg:h-[120px] flex   lg:flex-row items-center  justify-center gap-y-[60px] text-center">
         {/* World Icon */}
         <img
           src={World}

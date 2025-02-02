@@ -11,16 +11,16 @@ import Frame from "../assets/about/Frame.png";
 
 const About = () => {
   return (
-    <div className="w-full h-full flex flex-col  mx-auto lg:py-[150px] items-center justify-center ">
+    <div className="w-full h-[957px] flex flex-col bg-gray-100  mx-auto  items-center justify-center ">
       {/* Title Section */}
-      <div className="text-center  ">
-        <h1 className="text-[15px] lg:text-[45px] font-bold">
+      <div className="text-center flex items-center lg:pt-[60px]  ">
+        <h1 className="text-[15px] lg:text-[35px] font-bold">
         Why We Built the Pay4me App
         </h1>
       </div>
 
       {/* Card Section */}
-      <div className=" flex flex-col lg:flex-row space-y-3  space-x-2 lg:space-x-4  items-center justify-center h-full py-[70px] ">
+      <div className=" flex flex-col lg:pr-[55px]  lg:flex-row space-y-3  space-x-2 lg:space-x-4  items-center justify-center h-full py-[70px] ">
         <div className="flex lg:flex-row   space-x-2 lg:space-x-4 ">
           <div className="relative  w-[180px] lg:w-[370px] h-[300px] lg:h-[670px] bg-[rgba(236,232,82,0.1)] border-[rgba(0,0,0,0.2)] border lg:rounded-[30px]  rounded-[20px] flex flex-col ">
             {/* Card Content */}
