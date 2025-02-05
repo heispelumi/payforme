@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";  // For routing on mobile
+import { Link } from "react-scroll";  // For smooth scrolling
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import applogo from "../assets/applogo.png";
-
-
-
 import {
   RiInstagramFill,
   RiTiktokFill,
@@ -28,9 +26,9 @@ const Nav = () => {
   }, [nav]);
 
   return (
-    <nav className="fixed  overflow-x-hidden items-center  justify-center   md:py-6 w-full bg-gray-100  z-20">
+    <nav className="fixed overflow-x-hidden items-center justify-center md:py-6 w-full bg-gray-100 z-20">
       {/* Desktop View */}
-      <div className="w-full fixed  px-6 md:px-[50px] md:pb-[20px] bg-gray-100  lg:px-[150px] flex justify-between items-center h-[83.58px] md:h-[80px]">
+      <div className="w-full fixed px-6 md:px-[50px] md:pb-[20px] bg-gray-100 lg:px-[150px] flex justify-between items-center h-[83.58px] md:h-[80px]">
         {/* Brand Logo */}
         <div className="flex items-center py-8">
           <img
@@ -40,19 +38,17 @@ const Nav = () => {
           />
         </div>
 
-        {/* Menu Links for Desktop and tablet */}
-        <div className="hidden  md:flex lg:flex items-center  text-brandNavyblue">
+        {/* Menu Links for Desktop and Tablet */}
+        <div className="hidden md:flex lg:flex items-center text-brandNavyblue">
           <div className="flex items-center lg:ml-[-85px] md:space-x-[25px] lg:space-x-[30px]">
-          <Link to="/hero" className="text-[16px]">
-              Home
-            </Link>
-            <Link to="/about" className="text-[16px]">
+            {/* Smooth Scroll Links for Desktop */}
+            <Link to="about" smooth={true} duration={500} offset={-100} className="text-[16px]">
               About
             </Link>
-            <Link to="/blog" className="text-[16px]">
+            <Link to="blog" smooth={true} duration={500} className="text-[16px]">
               Blog
             </Link>
-            <Link to="/support" className="text-[16px]">
+            <Link to="faq" smooth={true} duration={500} className="text-[16px]">
               Support
             </Link>
           </div>
@@ -60,7 +56,7 @@ const Nav = () => {
 
         {/* Button for Desktop and Tablet */}
         <div className="hidden md:flex">
-          <button className="relative -top-1 -left-1 rounded-xl border-[1px] md:leading-[14.84px] lg:leading-[19.84px] md:w-[135px] md:h-[35px] lg:w-[154px] lg:h-[45px] md:text-[10px] lg:text-[13.5px] bg-brandPrimary md:py-1 md:px-4  lg:py-2.5 lg:px-6 text-white transition-all before:absolute lg:before:top-2 md:before:top-1 before:border-brandPrimary before:border-[2px] before:left-2 before:-z-[1] before:rounded-xl before:h-full before:w-full before:bg-brandSecondary before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
+          <button className="relative -top-1 -left-1 rounded-xl border-[1px] md:leading-[14.84px] lg:leading-[19.84px] md:w-[135px] md:h-[35px] lg:w-[154px] lg:h-[45px] md:text-[10px] lg:text-[13.5px] bg-brandPrimary md:py-1 md:px-4 lg:py-2.5 lg:px-6 text-white transition-all before:absolute lg:before:top-2 md:before:top-1 before:border-brandPrimary before:border-[2px] before:left-2 before:-z-[1] before:rounded-xl before:h-full before:w-full before:bg-brandSecondary before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
             Make a payment
           </button>
         </div>
@@ -97,16 +93,14 @@ const Nav = () => {
 
         {/* Menu Links */}
         <div className="flex flex-col items-center pt-[130px] space-y-8">
-        <Link to="/hero" className="text-[16px]">
-              Home
-            </Link>
-          <Link to="/about" onClick={() => setNav(false)} className="text-[16px]">
+          {/* Routing Links for Mobile */}
+          <Link to="about" smooth={true} duration={500}  onClick={() => setNav(false)} className="text-[16px]">
             About
           </Link>
-          <Link to="/blog" onClick={() => setNav(false)} className="text-[16px]">
+          <Link to="blog" smooth={true} duration={500}  onClick={() => setNav(false)} className="text-[16px]">
             Blog
           </Link>
-          <Link to="/support" onClick={() => setNav(false)} className="text-[16px]">
+          <Link to="faq" smooth={true} duration={500}  onClick={() => setNav(false)} className="text-[16px]">
             Support
           </Link>
         </div>

@@ -6,19 +6,19 @@ import { TiArrowRight } from "react-icons/ti";
 
 const Blog = () => {
   return (
-    <div className="w-full  lg:h-[957px] pb-[50px] flex flex-col bg-gray-100 mx-auto  items-center justify-center">
-        <div class="flex items-center  text-center  pt-[40px] lg:pt-[60px]  gap-3">
+    <div name='/blog' className="w-full pt-[50px] pb-[50px] lg:pt-[60px] flex flex-col mx-auto items-center bg-gray-100  ">
+        <div class="flex items-center text-center pt-[40px] lg:pt-[60px] gap-3">
     <div class="flex w-[px] flex-col  md:gap-3  gap-2  ">
-      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[40deg] md:rotate-[40deg] bg-[#7AC52D]"></div>
-      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] md:ml-[-10px] ml-[-2px]  bg-[#7AC52D]"></div>
-      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[-40deg] lg:rotate-[-40deg] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[16px] md:w-[23px] rounded-[8px] rotate-[40deg] md:rotate-[40deg] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[16px] md:w-[23px] rounded-[8px] md:ml-[-10px] ml-[-2px]  bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[16px] md:w-[23px] rounded-[8px] rotate-[-40deg] lg:rotate-[-40deg] bg-[#7AC52D]"></div>
       
     </div>
-    <h1 className="text-[15px] lg:text-[35px] font-bold">Latest Blogs and Resources</h1>
+    <h1 className="text-[15px] md:text-[30px] lg:text-[35px] font-bold">Latest Blogs and Resources</h1>
     <div class="flex w-[px] flex-col md:gap-3  gap-2  ">
       <div class="md:h-[3px] md:w-[23px] rounded-[8px] rotate-[-40deg] md:rotate-[-40deg] h-[1px] w-[15px]  bg-[#7AC52D]"></div>
-      <div class="md:h-[3px] h-[1px] w-[15px] rounded-[8px] md:w-[23px] ml-[5px] bg-[#7AC52D]"></div>
-      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[40deg] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[16px] rounded-[8px] md:w-[23px] ml-[5px] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[16px] md:w-[23px] rounded-[8px] rotate-[40deg] bg-[#7AC52D]"></div>
       
   </div>
   </div>

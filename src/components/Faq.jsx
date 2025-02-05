@@ -31,7 +31,7 @@ const Faq = () => {
   ];
 
   return (
-    <div className="w-full pt-[40px] pb-[50px] lg:pt-[60px] flex flex-col bg-white mx-auto items-center">
+    <div className="w-full pt-[50px] pb-[50px] lg:pt-[60px] flex flex-col bg-white mx-auto items-center">
       {/* Header Section */}
       <div className="flex items-center text-center pt-[40px] lg:pt-[60px] gap-3">
         <div className="flex flex-col md:gap-3 gap-2">
@@ -39,7 +39,7 @@ const Faq = () => {
           <div className="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] md:ml-[-10px] ml-[-2px] bg-[#7AC52D]"></div>
           <div className="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[-40deg] bg-[#7AC52D]"></div>
         </div>
-        <h1 className="text-[15px] lg:text-[35px] font-bold">FAQs</h1>
+        <h1 className="text-[15px] md:text-[30px]  lg:text-[35px] font-bold">FAQs</h1>
         <div className="flex flex-col md:gap-3 gap-2">
           <div className="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[-40deg] bg-[#7AC52D]"></div>
           <div className="md:h-[3px] h-[1px] w-[15px] md:w-[23px] ml-[5px] bg-[#7AC52D]"></div>

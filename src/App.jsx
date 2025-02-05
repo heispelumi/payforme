@@ -1,5 +1,6 @@
-import Hero from "./components/Hero";
+import { Link, Element } from "react-scroll";
 import Nav from "./components/Nav";
+import Hero from "./components/Hero";
 import Partnership from "./components/Partnership";
 import Users from "./components/Users";
 import About from "./components/About";
@@ -11,36 +12,50 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="flex  bg-gray-100  flex-col">
+    <div className="flex flex-col bg-gray-100">
       <div className="bg-gray-100">
-      <Nav />
+        <Nav />
       </div>
-      <div className="relative z-10">
+
+      {/* Navigation links for smooth scroll */}
+  
+
+      {/* Sections to scroll to */}
+      <Element name="hero" className="relative z-10">
         <Hero />
-      </div>
-      <div className="relative z-0  mt-[340px] md:mt-[500px]  lg:mt-[900px]">
+      </Element>
+
+      <Element name="partnership" className="relative z-0  mt-[340px] md:mt-[500px]  lg:mt-[900px]">
         <Partnership />
-      </div>
-      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+      </Element>
+
+      <Element name="about" className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
         <Users />
-      </div>
-      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+      </Element>
+
+      <Element name="about" className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
         <About />
-      </div>
-      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+      </Element>
+
+      <Element name="about2" className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
         <About2 />
-      </div>
+      </Element>
+
+      <Element name="blog" className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+        <Blog />
+      </Element>
+
+      <Element name="faq" className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+        <Faq />
+      </Element>
+
+      <Element name="partnership2" className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+        <Partnership2 />
+      </Element>
+
+      {/* Footer */}
       <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
-        <Blog/>
-      </div>
-      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
-        <Faq/>
-      </div>
-      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
-        <Partnership2/>
-      </div>
-      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
