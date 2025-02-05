@@ -6,21 +6,31 @@ import { TiArrowRight } from "react-icons/ti";
 
 const Blog = () => {
   return (
-    <div className="w-full h-[957px] flex flex-col bg-gray-100 mx-auto  items-center justify-center">
-      <div className="text-center  ">
-        <h1 className="text-[15px] lg:text-[35px] font-bold">
-          Latest Blogs and Resources
-        </h1>
-      </div>
+    <div className="w-full  lg:h-[957px] pb-[50px] flex flex-col bg-gray-100 mx-auto  items-center justify-center">
+        <div class="flex items-center  text-center  pt-[40px] lg:pt-[60px]  gap-3">
+    <div class="flex w-[px] flex-col  md:gap-3  gap-2  ">
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[40deg] md:rotate-[40deg] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] md:ml-[-10px] ml-[-2px]  bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[-40deg] lg:rotate-[-40deg] bg-[#7AC52D]"></div>
+      
+    </div>
+    <h1 className="text-[15px] lg:text-[35px] font-bold">Latest Blogs and Resources</h1>
+    <div class="flex w-[px] flex-col md:gap-3  gap-2  ">
+      <div class="md:h-[3px] md:w-[23px] rounded-[8px] rotate-[-40deg] md:rotate-[-40deg] h-[1px] w-[15px]  bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] rounded-[8px] md:w-[23px] ml-[5px] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[40deg] bg-[#7AC52D]"></div>
+      
+  </div>
+  </div>
 
-      <div className="lg:w-[1200px] flex items-center justify-center lg:pt-[50px] gap-y-[15px] lg;py-[30px] gap-x-[30px] flex-col lg:flex-row  h-[1200px] md:h-[1200px] lg:h-[700px] lg:py-[20px] ">
+      <div className="lg:w-[1200px] flex items-center justify-center lg:pt-[50px] gap-y-[25px]  gap-x-[30px] flex-col lg:flex-row  h-[1200px] md:h-[1200px] lg:h-[700px] lg:py-[20px] ">
         {/* first div */} 
         <div className=" w-[263px] h-[349px] lg:w-[380px] bg-white lg:h-[582px]">
           <div className=""> 
             <img src={blog1} alt="" />
           </div>
 
-          <div className='px-10 lg:px-10'>
+          <div className='px-6 lg:px-10'>
               <div className="lg:py-2 py-1 pt-4 lg:pt-7">
                 <p className=" text-[6px] lg:text-[15px] text-[#AAAAAA]">19 dec 2024 | BY Esther Ebere |</p>
               </div>
@@ -56,7 +66,7 @@ const Blog = () => {
             <img src={blog2} alt="" />
           </div>
 
-          <div className='px-10 lg:px-10'>
+          <div className='px-6 lg:px-10'>
               <div className="lg:py-2 py-1 pt-4 lg:pt-7">
                 <p className=" text-[6px] lg:text-[15px] text-[#AAAAAA]">11 dec 2024 | BY Esther Ebere |</p>
               </div>
@@ -92,7 +102,7 @@ const Blog = () => {
             <img src={blog3} alt="" />
           </div>
 
-          <div className='px-10 lg:px-10'>
+          <div className='px-6 lg:px-10'>
               <div className="lg:py-2 py-1 pt-4 lg:pt-7">
                 <p className=" text-[6px] lg:text-[15px] text-[#AAAAAA]">12 dec 2024 | BY Ernest Emeka |</p>
               </div>
@@ -133,20 +143,14 @@ const Blog = () => {
 
     
       </div>
-        <div className="text-center  ">
-        <div className="hidden   md:flex  ">
-              <button className="relative -top-1 -left-1 rounded-xl border-[1px] leading-[14.52px]  lg:leading-[19.84px] lg:w-[154px] w-[120px] h-[35px] lg:h-[45px] lg:text-[13.5px] text-[10px] bg-brandPrimary py-1.5 lg:py-2.5 md:px-6 px-2 text-white transition-all before:absolute before:top-1.5 before:border-brandPrimary before:border-[2px] before:left-2  before:-z-[1] before:rounded-xl before:h-full before:w-full before:bg-brandSecondary before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
-              View More
-              </button>
-            </div>
-
-        <div className="flex md:hidden ">
-          <button className="relative -top-1 -left-1 rounded-xl border-[1px] leading-[19.84px] w-[154px] h-[45px] text-[13.5px] bg-brandPrimary py-2.5 px-6 text-white transition-all before:absolute before:top-2 before:border-brandPrimary before:border-[2px] before:left-2 before:-z-[1] before:rounded-xl before:h-full before:w-full before:bg-brandSecondary before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0">
-          View More
-          </button>
-        </div>
-     
+      {/* Link Section */}
+      <div className="flex items-center pt-4 text-[12px] lg:pt-[16px] md:text-[16px] lg:text-[15px]">
+       
+        <a href="#" className="text-brandPrimary underline">
+          See More
+        </a>
       </div>
+ 
     </div>
   );
 };

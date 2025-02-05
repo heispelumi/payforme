@@ -6,6 +6,8 @@ import About from "./components/About";
 import About2 from "./components/About2";
 import Blog from "./components/Blog";
 import Faq from "./components/Faq";
+import Partnership2 from "./components/Partnership2";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
       </div>
       <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
         <Faq/>
+      </div>
+      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+        <Partnership2/>
+      </div>
+      <div className="relative z-0  mt-[10px] md:mt-[10px]  lg:mt-[10px]">
+        <Footer/>
       </div>
     </div>
   );

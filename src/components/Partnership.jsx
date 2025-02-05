@@ -9,7 +9,7 @@ import s5 from '../assets/sponsors/s5.png'
 
 const Partnership = () => {
   return (
-    <div className="flex items-center justify-center w-full  h-[265px] bg-gray-100">
+    <div className="flex items-center justify-center w-full   bg-gray-100">
       {/* Content Container */}
       <div className="relative w-full max-w-[266px] bg-gray-100 p-4 flex flex-col items-center justify-center">
         {/* Heading */}

@@ -3,17 +3,28 @@ import About1 from '../assets/about/About1.png';
 
 const About2 = () => {
   return (
-    <div className="w-full h-[957px] flex flex-col bg-white mx-auto  items-center justify-center">
-      {/* Title Section */}
-      <div className="text-center  flex items-center lg:pt-[60px] ">
-        <h1 className="text-[15px] lg:text-[35px] font-bold">
-          How to Download and Use the Pay4Me App
-        </h1>
-      </div>
+    <div className="w-full lg:h-[957px] flex flex-col bg-white mx-auto  items-center justify-center">
+    
+
+           <div class="flex items-center  text-center  pt-[40px] lg:pt-[60px]  gap-3">
+    <div class="flex w-[px] flex-col  md:gap-3  gap-2  ">
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[40deg] md:rotate-[40deg] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] md:ml-[-10px] ml-[-2px]  bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[-40deg] lg:rotate-[-40deg] bg-[#7AC52D]"></div>
+      
+    </div>
+    <h1 className="text-[15px] lg:text-[35px] font-bold">How to Download and Use the Pay4Me App</h1>
+    <div class="flex w-[px] flex-col md:gap-3  gap-2  ">
+      <div class="md:h-[3px] md:w-[23px] rounded-[8px] rotate-[-40deg] md:rotate-[-40deg] h-[1px] w-[15px]  bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] rounded-[8px] md:w-[23px] ml-[5px] bg-[#7AC52D]"></div>
+      <div class="md:h-[3px] h-[1px] w-[15px] md:w-[23px] rounded-[8px] rotate-[40deg] bg-[#7AC52D]"></div>
+      
+  </div>
+  </div>
 
       <div className="relative flex flex-row items-center pt-[10px]  w-full">
-        <div className="lg:w-[900px] w-[300px] px-[35px] md:px-[150px] lg:px-[280px] lg:h-[740px]">
-          <h1 className="w-[320px] lg:py-[100px] text-[15px]  lg:w-[750px] lg:h-[90px] leading-[24px] lg:leading-[45px] lg:text-[35px]">
+        <div className="lg:w-[900px] w-[300px] px-[35px] md:px-[150px] lg:px-[350px] lg:h-[740px]">
+          <h1 className="w-[320px] lg:py-[100px] text-[12px]  lg:w-[750px] lg:h-[90px] leading-[22px] lg:leading-[45px] lg:text-[35px]">
             Here's a step-by-step guide to downloading the Pay4Me app and getting started:
           </h1>
 
@@ -41,7 +52,7 @@ const About2 = () => {
         </div>
 
         {/* Image Section Positioned at the End */}
-        <div className="absolute mt-[150px] md:mt-[-200px]  lg:mt-[65px] bottom-[-1000x] lg:top-0 right-0 lg:right-0 w-[160px] md:w-[300px] lg:w-[500px] h-full">
+        <div className="absolute mt-[150px] md:mt-[-200px]  lg:mt-[90px] bottom-[-1000x] lg:top-0 right-0 lg:right-0 w-[160px] md:w-[300px] lg:w-[470px] h-full">
           <img className="w-full h-auto" src={About1} alt="Pay4Me App" />
         </div>
 
